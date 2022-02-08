@@ -1,0 +1,14 @@
+input.size{
+    width: 500px;
+}
+textarea.size{
+    height: 100%;
+}
+textarea.size15{
+    height: 100%;
+    width: 100%;
+}
+textarea.size17{
+    height: 80%;
+    width: 80%;
+}

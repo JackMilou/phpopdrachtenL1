@@ -1,0 +1,155 @@
+
+.item1 {
+    grid-area: header;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.item1b{
+    grid-area: error;
+    padding: 0px;
+    background-color: lightgray;
+}
+
+.item2 {
+    grid-area: bestand;
+    height: 80vh;
+    background-color: lightgray;
+    padding: 20px 0;
+}
+
+.item5 {
+    grid-area: overzicht;
+    background-color: yellowgreen;
+    padding: 20px 0;
+}
+
+/*.item6 { grid-area: inhoud; }*/
+.sub-grid-item1 {
+    grid-area: subheader;
+    background-color: lightgray;
+
+}
+
+.sub-grid-item2 {
+    grid-area: filelist;
+    background-color: lightgray;
+    overflow: auto;
+
+}
+
+.testoverflow {
+
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header '
+    'error error '
+    'bestand overzicht ';
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 30px 1fr ;
+    grid-gap: 0;
+    /*background-color: #2196F3;*/
+}
+
+.sub-grid-container {
+    display: grid;
+    grid-template-areas:
+  'subheader'
+  'filelist';
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px minmax(0, 1fr);
+    width: 100%;
+    height: 88%;
+    background-color: lightgray;
+    margin: 0px;
+    overflow: auto;
+}
+
+.grid-container > div {
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    /*text-align: center;*/
+
+    /*font-size: 30px;*/
+    padding-left: 10px;
+}
+
+.container {
+    height: 97vh;
+    width: 98vw;
+    background-color: yellow;
+}
+
+.colorRed {
+    color: red;
+    margin-right: 10px;
+}
+h1{
+    margin: 0px;
+}
+.folder{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: x-large;
+}
+
+.opmaakTable {
+    font-size: x-large;
+    table-layout: fixed;
+    width: 600px;
+}
+
+.opmaakTable > td {
+    width: 400px;
+    overflow: hidden;
+}
+
+.content {
+    background-color: white;
+    width: 100%;
+    height: 62%;
+}
+
+.icon-image {
+    height: 20px;
+}
+
+.fileimage {
+    height: 350px;
+    width: auto;
+}
+
+li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+ul {
+    margin: 0px;
+    padding: 0;
+}
+
+span {
+    margin-left: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: #c10222;
+}
+
+a:visited {
+    color: #292d87;
+}
+
+.size17 {
+    height: 300px;
+    width: 800px;
+}
+
+
